@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-title {
+    text-align: center;
+    color: #fff;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.user-details {
+    flex: 2;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.user-details h2 {
+    margin-bottom: 10px;
+}
+
+.user-details p {
+    margin: 5px 0;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #fff;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px; /* Sesuaikan ukuran lingkaran */
+    height: 40px; /* Sesuaikan ukuran lingkaran */
+    display: flex;
+    justify-content: center; /* Pusatkan ikon secara horizontal */
+    align-items: center; /* Pusatkan ikon secara vertikal */
+    background-color: #333;
+    border-radius: 50%; /* Membuat tombol berbentuk lingkaran */
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.back-button i {
+    font-size: 20px; /* Sesuaikan ukuran ikon */
+    text-align: center;
+    display: inline-block; /* Pastikan ikon adalah inline-block */
+    
+}
+
+.back-button:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.user-icon {
+    position: relative; /* Membuat posisi relatif untuk dropdown */
+    display: inline-block; /* Menyusun elemen secara inline */
+}
+
+.profile-dropdown {
+    display: none; /* Sembunyikan dropdown secara default */
+    position: absolute;
+    top: 40px; /* Jarak dari bagian atas */
+    right: 0;
+    background-color: #fff; /* Latar belakang putih */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 10; /* Pastikan dropdown di atas elemen lain */
+    padding:10px;
+    margin-right:20px;
+}
+
+.profile-dropdown a {
+    display: inline-block; /* Buat tautan tampil dalam satu baris secara horizontal */
+    padding: 10px; /* Padding untuk tautan */
+    text-decoration: none; /* Hapus garis bawah pada tautan */
+    color: #333; /* Warna teks */
+    font-size: 15px;
+    white-space: nowrap; /* Pastikan teks tidak turun ke baris baru */
+}
+
+.profile-dropdown a:hover {
+    background-color: #f0f0f0; /* Warna latar belakang saat hover */
+    border-radius: 5px;
+}
